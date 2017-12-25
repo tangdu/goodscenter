@@ -1,0 +1,10 @@
+group 'com.xnh'
+version '1.0-SNAPSHOT'
+apply plugin: 'war'
+
+dependencies {
+    compile(
+            project(":goodscenter-biz"),
+            project(":goodscenter-web")
+    )
+}

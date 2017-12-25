@@ -1,0 +1,45 @@
+ ${AnsiColor.GREEN}
+                            _ooOoo_  
+                           o8888888o  
+                           88" . "88  
+                           (| -_- |)  
+                           O\  =  /O  
+                        ____/`---'\____  
+                      .'  \\|     |  `.  
+                     /  \\|||  :  |||  \  
+                    /  _||||| -:- |||||-  \  
+                    |   | \\\  -  / |   |  
+                    | \_|  ''\---/''  |   |  
+                    \  .-\__  `-`  ___/-. /  
+                  ___`. .'  /--.--\  `. . __  
+               ."" '<  `.___\_<|>_/___.'  >'"".  
+              | | :  `- \`.;`\ _ /`;.`/ - ` : | |  
+              \  \ `-.   \_ __\ /__ _/   .-` /  /  
+         ======`-.____`-.___\_____/___.-`____.-'======  
+                            `=---='  
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
+                      佛祖保佑       永无BUG  
+ ${AnsiColor.DEFAULT}
+
+********************************************************************
+    Application   ${version}
+    SpringBoot    ${spring-boot.version}
+********************************************************************
+
+System.properties:
+--------------------------------------------------------------------
+    java.home                     = ${java.home}
+    java.version                  = ${java.version}
+    java.vendor                   = ${java.vendor}
+    java.class.version            = ${java.class.version}
+    java.class.path               = ${java.class.path}
+    java.library.path             = ${java.library.path}
+    java.io.tmpdir                = ${java.io.tmpdir}
+    java.compiler                 = ${java.compiler}
+    java.ext.dirs                 = ${java.ext.dirs}
+    os.name                       = ${os.name}
+    os.arch                       = ${os.arch}
+    os.version                    = ${os.version}
+    user.name                     = ${user.name}
+    user.dir                      = ${user.dir}
+---------------------------------------------------------------------

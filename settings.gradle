@@ -1,0 +1,9 @@
+rootProject.name = 'goodscenter'
+
+include 'goodscenter-biz'
+include 'goodscenter-dal'
+include 'goodscenter-facade'
+include 'goodscenter-deploy'
+include 'goodscenter-common'
+include 'goodscenter-web'
+

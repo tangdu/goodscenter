@@ -1,0 +1,27 @@
+group 'com.xnh.goodscenter'
+version '1.0'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-aop")
+    //compile("org.springframework.boot:spring-boot-starter-cache")
+    compile("org.springframework.boot:spring-boot-starter-data-redis")
+    compile(
+            project(":goodscenter-common"),
+            project(":goodscenter-dal"),
+            project(":goodscenter-facade"),
+            "com.google.guava:guava:${guava_version}",
+            "com.alibaba:fastjson:${fastjson_version}",
+            "joda-time:joda-time:${joda_version}"
+    )
+    compile( "com.alibaba:dubbo:${dubbo_version}"){
+        exclude(group:"org.springframework")
+    }
+    compile( "org.apache.zookeeper:zookeeper:${zookeeper_version}"){
+        exclude(group:"org.slf4j")
+    }
+    compile("com.101tec:zkclient:0.10"){
+        exclude(group:"org.slf4j")
+    }
+    compile("org.springframework.boot:spring-boot-starter-test")
+    compile("commons-io:commons-io:${common_io_version}")
+}

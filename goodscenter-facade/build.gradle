@@ -1,0 +1,40 @@
+apply plugin: "maven"
+
+dependencies {
+    compile(
+            "com.xnh.commons:knife:1.0.1",
+            "org.projectlombok:lombok:${lombok_version}"
+    )
+}
+
+
+//版本信息
+version '1.0.2'
+
+jar {
+    manifest {
+        attributes(
+                "Manifest-Version": "1.0",
+                "Created-By": "Gradle",
+                "Build-Jdk": "${sourceCompatibility}",
+                "Implementation-Title": project.name,
+                "Implementation-Version": version
+        )
+    }
+}
+
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            repository(url: MAVEN_RELEASE_REPOURL) {
+                authentication(userName: "xnh", password: "xnh123")
+            }
+            pom.project {
+                groupId project.group
+                artifactId project.name
+                version project.version
+            }
+        }
+    }
+}

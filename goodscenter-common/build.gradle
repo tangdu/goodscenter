@@ -1,0 +1,13 @@
+group 'com.xnh'
+version '1.0-SNAPSHOT'
+
+
+dependencies {
+    compile(
+            "com.google.guava:guava:${guava_version}",
+            "com.alibaba:fastjson:${fastjson_version}",
+            "joda-time:joda-time:${joda_version}",
+    )
+    compile("commons-io:commons-io:${common_io_version}")
+
+}
