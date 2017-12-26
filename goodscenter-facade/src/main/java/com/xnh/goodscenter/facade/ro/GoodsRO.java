@@ -3,6 +3,7 @@ package com.xnh.goodscenter.facade.ro;
 import lombok.Data;
 
 import java.io.Serializable;
+
 /**
  * 商品信息对象
  *
@@ -11,11 +12,14 @@ import java.io.Serializable;
  * @name 商品对象
  */
 @Data
-public class GoodsRO implements Serializable{
+public class GoodsRO implements Serializable {
 
-    /**商品ID**/
-    private Long goodsId;
+	/****/
+	private static final long serialVersionUID = -5885050884440213155L;
 
-    /**商品名称**/
-    private String goodsName;
+	/** 商品ID **/
+	private Long goodsId;
+
+	/** 商品名称 **/
+	private String goodsName;
 }
