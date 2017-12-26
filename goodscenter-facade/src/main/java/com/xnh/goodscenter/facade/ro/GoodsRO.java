@@ -13,7 +13,9 @@ import java.io.Serializable;
 @Data
 public class GoodsRO implements Serializable{
 
-    /**商品名称**/
-    private String name;
+    /**商品ID**/
+    private Long goodsId;
 
+    /**商品名称**/
+    private String goodsName;
 }

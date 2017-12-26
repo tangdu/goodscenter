@@ -6,4 +6,5 @@ include 'goodscenter-facade'
 include 'goodscenter-deploy'
 include 'goodscenter-common'
 include 'goodscenter-web'
+include 'goodscenter-intergration'
 
